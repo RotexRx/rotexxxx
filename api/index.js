@@ -25,10 +25,10 @@ const STRIP_HEADERS = new Set([
   "x-forwarded-port",
 ]);
 
-export default async function handler(req, res) {
+export default async function Rotex(req, res) {
   if (!TARGET_BASE) {
     res.statusCode = 500;
-    return res.end("Misconfigured: TARGET_DOMAIN is not set");
+    return res.end("Conf Set Nashode");
   }
 
   try {
